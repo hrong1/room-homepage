@@ -4,3 +4,8 @@ body {
     justify-content: center;
     font-family: $font-main;
 }
+
+main {
+    display: grid;
+    grid-template-rows: 1fr auto;
+}

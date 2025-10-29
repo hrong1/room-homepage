@@ -34,15 +34,15 @@
 
     @media (min-width: $desktop) {
         grid-template-rows: unset;
-        grid-template-columns: auto 1fr auto;
+        grid-template-columns: 1fr 1fr 1fr;
         
         &__content {
-            padding: 0 $spacing-6;
+            padding: $spacing-3 $spacing-5;
         }
 
         &__title {
-            font-size: $fs-sm;
-            letter-spacing: $letter-spacing * 5;
+            font-size: $fs-xs;
+            letter-spacing: $letter-spacing * 3;
         }
 
         &__text {

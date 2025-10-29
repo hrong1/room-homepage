@@ -94,11 +94,11 @@
         }
 
         &__content {
-            padding: $spacing-6;
+            padding: $spacing-5;
         }
 
         &__title {
-            font-size: $fs-xxxl;
+            font-size: $fs-xxl;
         }
 
         &__change-button {
@@ -110,14 +110,10 @@
 
         &__shopLink {
             left: 60%;
-            padding: 0 $spacing-6;
+            padding: 0 $spacing-5;
             // right: 50%;
             bottom: 20%;
         }
 
-        &__arrowButton {
-            width: $toggle-size * 4;
-            height: $toggle-size * 4;
-        }
     }
 }
