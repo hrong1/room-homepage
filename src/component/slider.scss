@@ -1,0 +1,82 @@
+.slider {
+    display: grid;
+    grid-template-areas: 
+        'container';
+    grid-template-rows: 1fr;
+    width: 100%;
+    position: relative;
+
+    &__container {
+        display: grid;
+        grid-template-areas: 
+            'image'
+            'context';
+        grid-template-rows: 1fr 1fr;
+        opacity: 0;
+        grid-area: container;
+        transition: opacity $animation-time * 2 ease-out;
+
+        &.active {
+            opacity: 1;
+        }
+    }
+    
+    &__image {
+        width: 100%;
+        grid-area: image;
+
+        & img {
+            display: block;
+            width: 100%;
+            height: auto;
+        }
+    }
+
+    &__content {
+        width: 100%;
+        grid-area: context;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: $spacing-3;
+        gap: $spacing-3;
+    }
+
+    &__change-button {
+        position: absolute;
+        top: 50%;
+        right: 0;
+        transform: translateY(-100%);
+    }
+
+    &__arrowButton {
+        width: $toggle-size * 3;
+        height: $toggle-size * 3;
+        cursor: pointer;
+        background-color: $black;
+        border: none;
+
+        &:hover {
+            background-color: $black-opacity-50;
+        }
+    }
+
+
+    &__shopLink {
+        position: absolute;
+        bottom: $spacing-3;
+        left: $spacing-3;
+        letter-spacing: $letter-spacing * 5;
+        display: flex;
+        align-items: center;
+        gap: $spacing-3;
+        color: $black;
+        text-transform: uppercase;
+        font-size: $fs-sm;
+
+        &:hover {
+            color: $black-opacity-50
+        }
+    }
+}

@@ -1,0 +1,33 @@
+.About {
+    width: 100%;
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+
+    &__dark,
+    &__light {
+        width: 100%;
+        display: block;
+        height: 100%;
+    }
+
+    &__content {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding: $spacing-3;
+        gap: $spacing-3;
+        box-sizing: border-box;
+    }
+
+    &__title {
+        letter-spacing: $letter-spacing * 2;
+        font-size: $fs-xs;
+        text-transform: uppercase;
+    }
+
+    &__text {
+        color: $grey-500;
+        font-size: $fs-sm - 0.1rem;
+        line-height: $spacing-3;
+    }
+}

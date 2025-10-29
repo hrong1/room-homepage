@@ -1,0 +1,41 @@
+// color
+$white: hsl(0, 0%, 100%);
+$black: hsl(0, 0%, 0%);
+$black-opacity-50: hsla(0, 0%, 0%, 0.50);
+$grey: hsl(0, 0%, 50%);
+$grey-500: hsl(0, 0%, 63%);
+$grey-800: hsl(0, 0%, 27%);
+// font
+$font-main: "League Spartan", sans-serif;
+$fs-base: 1rem;
+$fs-xxs: 0.5rem;
+$fs-xs: 0.625rem;
+$fs-sm: 0.875rem;
+$fs-lg: 1.25rem;
+$fs-xl: 1.5rem;
+$fs-xxl: 2rem;
+$font-bold: 700;
+$font-normal: 400;
+$font-thin: 300;
+$letter-spacing: 0.1rem;
+// spacing and margins
+$spacing-1: 0.25rem;
+$spacing-2: 0.5rem;
+$spacing-3: 1rem;
+$spacing-4: 1.5rem;
+$spacing-5: 2rem;
+$spacing-6: 3rem;
+// radius
+$border-radius-sm: 0.25rem;
+$border-radius-md: 0.5rem;
+$border-radius-lg: 1rem;
+$border-radius-pill: 50rem;
+$border-radius-circle: 50%;
+// animation
+$animation-time: 0.3s;
+// border
+$border-width: 0.1rem;
+// opacity
+$default-opacity: 0.5;
+// width
+$toggle-size: 1rem;
