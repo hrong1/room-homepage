@@ -38,9 +38,14 @@
         display: flex;
         flex-direction: column;
         justify-content: center;
-        align-items: center;
         padding: $spacing-3;
         gap: $spacing-3;
+    }
+
+    &__text {
+        line-height: $spacing-4;
+        color: $grey-500;
+        font-size: $fs-sm;
     }
 
     &__change-button {
@@ -77,6 +82,42 @@
 
         &:hover {
             color: $black-opacity-50
+        }
+    }
+
+    @media (min-width: $desktop) {
+        &__container {
+            grid-template-areas: 
+                'image context';
+            grid-template-rows: unset;
+            grid-template-columns: 60% 40%;
+        }
+
+        &__content {
+            padding: $spacing-6;
+        }
+
+        &__title {
+            font-size: $fs-xxxl;
+        }
+
+        &__change-button {
+            top: unset;
+            bottom: 0;
+            left: 60%;
+            transform: unset;
+        }
+
+        &__shopLink {
+            left: 60%;
+            padding: 0 $spacing-6;
+            // right: 50%;
+            bottom: 20%;
+        }
+
+        &__arrowButton {
+            width: $toggle-size * 4;
+            height: $toggle-size * 4;
         }
     }
 }

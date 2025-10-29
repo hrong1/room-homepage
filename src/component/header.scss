@@ -93,4 +93,61 @@
             background-image: url('../assets/icon-close.svg');
         }
     }
+
+    @media (min-width: $desktop) {
+        &__top {
+            flex-direction: row-reverse;
+            justify-content: flex-end;
+            gap: $spacing-6;
+            margin: $spacing-6;
+        }
+
+        &__nav-toggle {
+            display: none;
+        }
+
+        &__nav-list {
+            position: static;
+            background-color: transparent;
+            top: unset;
+            right: unset;
+            justify-content: flex-end;
+            gap: $spacing-3;
+            padding: 0;
+            transform: unset;
+            gap: $spacing-5;
+            align-items: center;
+
+            li {
+                a {
+                    color: $white;
+                    font-size: $fs-base;
+                    font-weight: $font-medium;
+                    position: relative;
+                    padding: $spacing-2 0;
+
+                    &::after {
+                        content: '';
+                        position: absolute;
+                        bottom: 0;
+                        left: 50%;
+                        transform: translateX(-50%) scaleX(0);
+                        width: 80%;
+                        height: $border-width * 2;
+                        background-color: $white;
+                        transition: transform $animation-time ease;
+                    }
+
+                    &:hover::after {
+                        transform: translateX(-50%) scaleX(1);
+                    }
+                }
+        }
+        }
+
+        &__logo {
+            margin-left: unset;
+            margin-right: unset;
+        }
+    }
 }

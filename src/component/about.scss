@@ -2,6 +2,7 @@
     width: 100%;
     display: grid;
     grid-template-rows: 1fr 1fr 1fr;
+    align-items: center;
 
     &__dark,
     &__light {
@@ -29,5 +30,24 @@
         color: $grey-500;
         font-size: $fs-sm - 0.1rem;
         line-height: $spacing-3;
+    }
+
+    @media (min-width: $desktop) {
+        grid-template-rows: unset;
+        grid-template-columns: auto 1fr auto;
+        
+        &__content {
+            padding: 0 $spacing-6;
+        }
+
+        &__title {
+            font-size: $fs-sm;
+            letter-spacing: $letter-spacing * 5;
+        }
+
+        &__text {
+            font-size: $fs-sm;
+            line-height: $spacing-4;
+        }
     }
 }
